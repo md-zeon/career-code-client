@@ -3,6 +3,7 @@ import { AuthContext } from "../../context/AuthContext";
 import Lottie from "lottie-react";
 import signInLottie from "../../assets/lotties/signIn.json";
 import { Link } from "react-router";
+import SocialLogin from "../../shared/SocialLogin";
 
 const SignIn = () => {
 	const { signInUser } = use(AuthContext);
@@ -66,6 +67,7 @@ const SignIn = () => {
 								Sign In
 							</button>
 						</form>
+						<SocialLogin />	
 					</div>
 				</div>
 			</div>
